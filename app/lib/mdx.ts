@@ -12,6 +12,7 @@ export interface MdxPost {
   readTime: string;
   excerpt: string;
   content: string;
+  coverImage?: string;
 }
 
 export function getMdxPost(slug: string): MdxPost | null {
