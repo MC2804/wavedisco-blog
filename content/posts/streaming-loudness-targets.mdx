@@ -1,0 +1,60 @@
+---
+slug: streaming-loudness-targets
+title: "Streaming Loudness Targets in 2026 — The Complete Platform Guide"
+category: guides
+date: "June 23, 2026"
+readTime: "4 min read"
+excerpt: "Every streaming platform normalizes audio differently. Spotify, Apple Music, YouTube, Tidal, SoundCloud — the complete reference table for AI music creators."
+---
+
+Every streaming platform normalizes audio differently. If you don't know the target, you're guessing. This is the complete reference — bookmark it.
+
+![Streaming loudness targets 2026 — Spotify, Apple Music, YouTube and more](/images/streaming-loudness-targets-cover.webp)
+
+---
+
+## Why platforms normalize audio
+
+Before loudness normalization existed, the loudness war was real. Labels and artists would master tracks as loud as possible to stand out. Listeners constantly adjusted volume between songs. It was exhausting.
+
+Starting around 2013, platforms began enforcing loudness targets. If your track is too loud — it gets turned down. If it's too quiet — it stays quiet. The goal: consistent listening experience across all content.
+
+For AI music creators, this matters more than ever. Suno and Udio export hot. Knowing the targets tells you exactly how much to correct.
+
+---
+
+## The complete loudness target table
+
+| Platform | Target LUFS | True Peak Max | Notes |
+|---|---|---|---|
+| Spotify | -14 LUFS | -1 dBFS | Turns down louder tracks |
+| Apple Music | -16 LUFS | -1 dBFS | Strictest normalization |
+| YouTube | -14 LUFS | -1 dBFS | Applies to all videos |
+| Tidal | -14 LUFS | -1 dBFS | Hi-Fi listeners notice clipping |
+| Amazon Music | -14 LUFS | -2 dBFS | Slightly stricter peak |
+| SoundCloud | -10 LUFS | -1 dBFS | Loudest target — less correction |
+| Deezer | -15 LUFS | -1 dBFS | Between Spotify and Apple |
+| Podcast platforms | -16 LUFS | -1 dBFS | Same as Apple Music |
+
+---
+
+## What this means for your Suno tracks
+
+A typical Suno export lands at -10 to -12 LUFS. Here's what happens on each platform:
+
+- **Spotify**: turns it down 2–4 dB. Clipping artifacts become audible.
+- **Apple Music**: turns it down 4–6 dB. Most aggressive correction — worst result if unmastered.
+- **YouTube**: same as Spotify. Background music sounds muddy.
+- **SoundCloud**: closest to Suno's native output — least correction, but still not ideal.
+
+The safest universal target: **-14 LUFS with true peak at -1 dBFS**. This works acceptably on every platform.
+
+---
+
+## The one number to remember
+
+Master to **-14 LUFS**. It's the most common target across major platforms. Apple Music will turn it down a little more — that's fine. SoundCloud will leave it mostly alone — also fine.
+
+What's not fine: uploading a raw -10 LUFS Suno export and hoping for the best.
+
+[WaveDisco](https://wavedisco.com) normalizes to any platform target automatically. Drop your track in, pick the platform, export. Free in the browser.

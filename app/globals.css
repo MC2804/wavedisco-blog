@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #F5F0E8;
+  --foreground: #1A1A1A;
 }
 
 @theme inline {
@@ -12,15 +12,110 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@theme {
+  --color-cream: #F5F0E8;
+  --color-amber: #C8860A;
+  --color-brown: #8B7355;
+  --color-card:  #FDFAF4;
+  --color-ink:   #1A1A1A;
+  --color-dark:  #1A1A1A;
+  --color-muted: #6B5B45;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #F5F0E8;
+  color: #1A1A1A;
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
+
+/* ── Article prose ── */
+.article-body p {
+  margin-bottom: 1.4rem;
+  font-size: 17px;
+  line-height: 1.8;
+  color: #6B5B45;
+}
+.article-body h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #1A1A1A;
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+.article-body blockquote {
+  border-left: 4px solid #C8860A;
+  padding-left: 1.25rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+  color: #8B7355;
+}
+.article-body a {
+  color: #C8860A;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.article-body a:hover {
+  opacity: 0.8;
+}
+.article-body hr {
+  border: none;
+  border-top: 1px solid #C8860A33;
+  margin: 2.5rem 0;
+}
+.article-body em {
+  color: #8B7355;
+  font-style: italic;
+}
+.article-body strong {
+  color: #1A1A1A;
+  font-weight: 600;
+}
+.article-body table {
+  display: block;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 14px;
+}
+.article-body th {
+  background: #C8860A;
+  color: #fff;
+  font-weight: 700;
+  text-align: left;
+  padding: 0.6rem 0.9rem;
+  font-size: 13px;
+  letter-spacing: 0.03em;
+}
+.article-body td {
+  padding: 0.55rem 0.9rem;
+  color: #6B5B45;
+  border-bottom: 1px solid #C8860A22;
+}
+.article-body tr:nth-child(even) td {
+  background: #C8860A0A;
+}
+.article-body ul li,
+.article-body ol li {
+  margin-bottom: 0.5rem;
+  color: #6B5B45;
+  font-size: 17px;
+  line-height: 1.7;
+}
+.article-body ul {
+  list-style: disc;
+  padding-left: 1.4rem;
+  margin-bottom: 1.4rem;
+}
+.article-body ol {
+  list-style: decimal;
+  padding-left: 1.4rem;
+  margin-bottom: 1.4rem;
+}
+.article-body img {
+  width: 100%;
+  border-radius: 12px;
+  margin: 1.5rem 0;
 }
