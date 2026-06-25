@@ -44,7 +44,7 @@ export default function Home() {
             src="/images/author-portrait.png"
             alt="Serj — author of WaveDisco Blog"
             className="opacity-90"
-            style={{ height: "100%", width: "auto", display: "block" }}
+            style={{ height: "100%", width: "auto", display: "block", maxWidth: "none" }}
           />
         </div>
 
