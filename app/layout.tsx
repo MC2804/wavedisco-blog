@@ -45,6 +45,9 @@ export const metadata: Metadata = {
     description: "Free guides on mastering AI music from Suno and Udio.",
     images: ["https://blog.wavedisco.com/images/my-story-cover.webp"],
   },
+  verification: {
+    yandex: "ba87f27b7786ac6b",
+  },
 };
 
 export default function RootLayout({
