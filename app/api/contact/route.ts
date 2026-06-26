@@ -39,21 +39,19 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "DB not configured" }, { status: 503 });
   }
 
-  // Email временно отключён — нужна верификация домена wavedisco.com в Resend
-  // После верификации: раскомментировать и сменить from на blog@wavedisco.com
-  // if (process.env.RESEND_API_KEY) {
-  //   try {
-  //     const resend = new Resend(process.env.RESEND_API_KEY);
-  //     await resend.emails.send({
-  //       from: "blog@wavedisco.com",
-  //       to: "hello@wavedisco.com",
-  //       subject: `New message from ${name.trim()}`,
-  //       text: `Name: ${name.trim()}\nEmail: ${email.trim()}\n\nMessage:\n${message.trim()}`,
-  //     });
-  //   } catch {
-  //     // Email notification failed — message still saved to DB
-  //   }
-  // }
+  if (process.env.RESEND_API_KEY) {
+    try {
+      const resend = new Resend(process.env.RESEND_API_KEY);
+      await resend.emails.send({
+        from: "blog@wavedisco.com",
+        to: "hello@wavedisco.com",
+        subject: `New message from ${name.trim()}`,
+        text: `Name: ${name.trim()}\nEmail: ${email.trim()}\n\nMessage:\n${message.trim()}`,
+      });
+    } catch {
+      // Email notification failed — message still saved to DB
+    }
+  }
 
   return NextResponse.json({ success: true });
 }
