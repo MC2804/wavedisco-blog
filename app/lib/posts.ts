@@ -187,6 +187,16 @@ export const posts: Post[] = [
     date: "June 12, 2026",
     readTime: "4 min",
   },
+  {
+    slug: "free-ai-music-mastering-tool",
+    category: "guides",
+    title: "Free AI Music Mastering Tool — Master Your Suno and Udio Tracks Online",
+    excerpt:
+      "Most mastering tools cost money. WaveDisco Studio doesn't. Free browser mastering for Suno and Udio — no install, no account, no watermark.",
+    date: "July 2, 2026",
+    readTime: "4 min",
+    coverImage: "free-ai-mastering-tool.webp",
+  },
 ];
 
 export function getPostsByCategory(category: Category): Post[] {
