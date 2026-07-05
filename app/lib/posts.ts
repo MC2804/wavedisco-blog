@@ -63,7 +63,7 @@ export const posts: Post[] = [
     category: "guides",
     title: "How to Fix Clipping in AI Music — A Practical Guide",
     excerpt:
-      "Your AI track has clipping. You can hear it — harsh buzzing on loud transients, brittleness in the high end. This guide explains what's happening and how to fix it.",
+      "Your AI track has clipping. Harsh buzzing on loud transients, brittleness in the high end. This guide explains what's happening and how to fix it.",
     date: "June 23, 2026",
     readTime: "5 min read",
     coverImage: "how-to-fix-clipping-cover.webp",

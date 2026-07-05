@@ -1,3 +1,4 @@
+import React from "react";
 import Link from "next/link";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import remarkGfm from "remark-gfm";
@@ -8,6 +9,17 @@ import type { Metadata } from "next";
 
 const SITE_URL = "https://blog.wavedisco.com";
 const DEFAULT_OG_IMAGE = `${SITE_URL}/images/my-story-cover.webp`;
+
+const mdxComponents = {
+  a: (props: React.ComponentPropsWithoutRef<"a">) => {
+    const isExternal = props.href?.startsWith("http");
+    return isExternal ? (
+      <a {...props} target="_blank" rel="noopener noreferrer" />
+    ) : (
+      <a {...props} />
+    );
+  },
+};
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -94,7 +106,7 @@ export default async function BlogPost({ params }: Props) {
         <div className="max-w-2xl mx-auto px-6 py-10">
           {mdx ? (
             <article className="article-body">
-              <MDXRemote source={mdx.content} options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }} />
+              <MDXRemote source={mdx.content} components={mdxComponents} options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }} />
             </article>
           ) : (
             <div className="bg-card border border-amber/15 rounded-xl p-6 text-muted text-sm leading-relaxed">
