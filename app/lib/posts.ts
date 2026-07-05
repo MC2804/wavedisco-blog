@@ -208,6 +208,16 @@ export const posts: Post[] = [
     readTime: "5 min",
     coverImage: "udio-mastering-online.webp",
   },
+  {
+    slug: "best-free-ai-music-mastering-tools",
+    category: "guides",
+    title: "Best Free AI Music Mastering Tools in 2026 — Honest Comparison",
+    excerpt:
+      "Four tools compared honestly — WaveDisco Studio, Audacity, FFmpeg, LANDR. What each does well, where each falls short, and which is right for AI music.",
+    date: "July 2, 2026",
+    readTime: "5 min",
+    coverImage: "best-free-ai-mastering-tools.webp",
+  },
 ];
 
 export function getPostsByCategory(category: Category): Post[] {
