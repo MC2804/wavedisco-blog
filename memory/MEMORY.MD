@@ -220,9 +220,24 @@ wavedisco-manual-mode, dj-mode-guide
   4. Раскомментировать блок в `app/api/contact/route.ts`
   5. Добавить `RESEND_API_KEY` в Vercel Environment Variables
 
+## GitHub ✅ 24.06.2026
+- Репо: https://github.com/MC2804/wavedisco-blog (public)
+- Ветка: main | 55 файлов | коммит: "Launch: WaveDisco Blog — 14 articles, Neon DB, Privacy Policy"
+- .env.local НЕ попал в репо (.gitignore: .env*) ✅
+- gh CLI установлен (v2.95.0) но не авторизован — пуш через git credentials
+
+## Vercel ✅ 25.06.2026
+- Проект: wavedisco-blog на Vercel (Hobby plan)
+- URL: wavedisco-blog.vercel.app ✅
+- Домен blog.wavedisco.com ✅ Valid Configuration — LIVE 25.06.2026
+- DNS в Hostinger: CNAME `blog` → `9b7cfaaeda7618cf.vercel-dns-017.com.` (TTL 14400) ✅
+- После пропагации: blog.wavedisco.com будет жить ✅
+
 ## Следующие шаги (приоритет)
-1. **GitHub** — создать репо `MC2804/wavedisco-blog` → push
-2. **Vercel** — задеплоить → `blog.wavedisco.com`
+1. **Дождаться DNS** — blog.wavedisco.com (5-15 мин)
+2. **Resend домен** — верифицировать wavedisco.com → раскомментировать email код
+3. **sitemap.xml + robots.txt** — для SEO
+4. После деплоя: ещё 10–15 статей
 3. **Resend** — зарегистрироваться → API ключ → верифицировать домен → добавить в Vercel
 4. **sitemap.xml + robots.txt**
 5. После деплоя: ещё 10–15 статей

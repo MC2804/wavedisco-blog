@@ -170,15 +170,6 @@ export const posts: Post[] = [
     coverImage: "wavedisco-dj-mode.webp",
   },
   {
-    slug: "dj-mode-mix-reverse-echo",
-    category: "features",
-    title: "DJ Mode — mix, reverse and echo your AI music in the browser",
-    excerpt:
-      "No software. No plugins. Drop your track and start mixing right now.",
-    date: "June 17, 2026",
-    readTime: "4 min",
-  },
-  {
     slug: "noise-gate-hysteresis",
     category: "features",
     title: "WaveDisco Noise Gate: Why 6 dB Hysteresis Matters",
