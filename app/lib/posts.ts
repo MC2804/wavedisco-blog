@@ -198,6 +198,16 @@ export const posts: Post[] = [
     readTime: "5 min",
     coverImage: "suno-mastering-online.webp",
   },
+  {
+    slug: "udio-mastering-online",
+    category: "guides",
+    title: "Udio Mastering Online — How to Get Your Udio Tracks Ready for Streaming",
+    excerpt:
+      "Udio exports hot and irregularly. Rich arrangements cause low-mid buildup. Here is exactly how to master Udio tracks for Spotify and Apple Music — free online.",
+    date: "July 2, 2026",
+    readTime: "5 min",
+    coverImage: "udio-mastering-online.webp",
+  },
 ];
 
 export function getPostsByCategory(category: Category): Post[] {
