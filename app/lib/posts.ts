@@ -188,6 +188,16 @@ export const posts: Post[] = [
     readTime: "4 min",
     coverImage: "free-ai-mastering-tool.webp",
   },
+  {
+    slug: "suno-mastering-online",
+    category: "guides",
+    title: "Suno Mastering Online — How to Make Your Suno Tracks Streaming-Ready",
+    excerpt:
+      "Suno exports at -10 to -12 LUFS. Streaming platforms want -14 to -16 LUFS. Here is exactly why that gap causes problems and how to fix it online for free.",
+    date: "July 2, 2026",
+    readTime: "5 min",
+    coverImage: "suno-mastering-online.webp",
+  },
 ];
 
 export function getPostsByCategory(category: Category): Post[] {
