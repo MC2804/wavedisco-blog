@@ -228,6 +228,16 @@ export const posts: Post[] = [
     readTime: "5 min",
     coverImage: "how-to-make-suno-louder.webp",
   },
+  {
+    slug: "mistakes-uploading-ai-music-spotify",
+    category: "guides",
+    title: "The 3 Mistakes I Made Uploading AI Music to Spotify — And How to Avoid Them",
+    excerpt:
+      "I uploaded my first Suno track to Spotify without mastering it. It sounded wrong. Here are the three mistakes I made and what I do differently now.",
+    date: "July 10, 2026",
+    readTime: "5 min",
+    coverImage: "mistakes-uploading-spotify.webp",
+  },
 ];
 
 export function getPostsByCategory(category: Category): Post[] {
