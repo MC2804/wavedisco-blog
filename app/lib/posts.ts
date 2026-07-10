@@ -226,6 +226,7 @@ export const posts: Post[] = [
       "I kept pushing Suno tracks louder. The result was always distortion, clipping, and YouTube undoing all the work. Here's what I actually learned.",
     date: "July 10, 2026",
     readTime: "5 min",
+    coverImage: "how-to-make-suno-louder.webp",
   },
 ];
 
