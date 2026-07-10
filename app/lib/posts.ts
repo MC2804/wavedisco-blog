@@ -31,11 +31,12 @@ export const posts: Post[] = [
   {
     slug: "from-suno-to-real-product",
     category: "story",
-    title: "From AI Tracks to a Real Product: The PRISM Story",
+    title: "From Hospital Poems to AI Music — How Suno Became More Than a Toy",
     excerpt:
-      "Six months of nights and weekends, a custom DSP engine, and a lot of failed mastering chains. Here's how PRISM Master was born.",
-    date: "June 10, 2026",
-    readTime: "8 min",
+      "I started writing poems at 12, alone in a German hospital. Years later Suno gave them a voice. Here is how that led to building WaveDisco.",
+    date: "July 10, 2026",
+    readTime: "6 min",
+    coverImage: "from-suno-to-real-product.webp",
   },
   // Guides
   {
