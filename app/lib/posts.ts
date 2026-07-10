@@ -178,6 +178,7 @@ export const posts: Post[] = [
       "Most noise gates chatter when room noise sits at the threshold. WaveDisco's hysteresis gate uses a 6 dB dead-band to keep transitions clean.",
     date: "July 10, 2026",
     readTime: "4 min",
+    coverImage: "noise-gate-hysteresis.webp",
   },
   {
     slug: "free-ai-music-mastering-tool",
