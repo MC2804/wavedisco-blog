@@ -175,8 +175,8 @@ export const posts: Post[] = [
     category: "features",
     title: "WaveDisco Noise Gate: Why 6 dB Hysteresis Matters",
     excerpt:
-      "Most noise gates pump and chatter at the threshold. PRISM's hysteresis gate locks transitions clean. Here's how it works under the hood.",
-    date: "June 12, 2026",
+      "Most noise gates chatter when room noise sits at the threshold. WaveDisco's hysteresis gate uses a 6 dB dead-band to keep transitions clean.",
+    date: "July 10, 2026",
     readTime: "4 min",
   },
   {
