@@ -218,6 +218,15 @@ export const posts: Post[] = [
     readTime: "5 min",
     coverImage: "best-free-ai-mastering-tools.webp",
   },
+  {
+    slug: "how-to-make-suno-music-louder",
+    category: "guides",
+    title: "How to Make Your Suno Music Louder — And Why I Stopped Trying",
+    excerpt:
+      "I kept pushing Suno tracks louder. The result was always distortion, clipping, and YouTube undoing all the work. Here's what I actually learned.",
+    date: "July 10, 2026",
+    readTime: "5 min",
+  },
 ];
 
 export function getPostsByCategory(category: Category): Post[] {
