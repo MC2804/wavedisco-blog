@@ -278,7 +278,7 @@ export const posts: Post[] = [
       "Suno and Udio both export too hot. But they clip differently, respond to EQ differently, and one of them is significantly harder to master than the other.",
     date: "July 19, 2026",
     readTime: "6 min",
-    coverImage: "suno-vs-udio-comparison.webp",
+    coverImage: "suno-vs-udio-mastering.webp",
   },
 ];
 
