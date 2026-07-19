@@ -42,9 +42,9 @@ export const posts: Post[] = [
   {
     slug: "udio-vs-suno",
     category: "guides",
-    title: "Suno vs Udio — Which AI Music Generator Sounds Better After Mastering?",
+    title: "Suno vs Udio 2026 — I Mastered Both. Here Is the Honest Difference.",
     excerpt:
-      "Both generate music from prompts. Both export hot. But they clip differently, respond to mastering differently, and suit different styles. An honest comparison.",
+      "Same prompt, two generators. Suno clips differently than Udio, masters differently, and suits different styles. Real results after processing both through the same chain.",
     date: "June 23, 2026",
     readTime: "5 min read",
     coverImage: "suno-vs-udio-comparison.webp",
@@ -269,6 +269,16 @@ export const posts: Post[] = [
     date: "July 19, 2026",
     readTime: "4 min",
     coverImage: "russian-chanson-suno.webp",
+  },
+  {
+    slug: "suno-vs-udio-mastering",
+    category: "guides",
+    title: "Suno vs Udio Mastering — Which One Actually Sounds Better After Processing?",
+    excerpt:
+      "Suno and Udio both export too hot. But they clip differently, respond to EQ differently, and one of them is significantly harder to master than the other.",
+    date: "July 19, 2026",
+    readTime: "6 min",
+    coverImage: "suno-vs-udio-comparison.webp",
   },
 ];
 
