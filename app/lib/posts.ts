@@ -250,6 +250,26 @@ export const posts: Post[] = [
     readTime: "5 min",
     coverImage: "what-is-true-peak.webp",
   },
+  {
+    slug: "ai-music-copyright",
+    category: "story",
+    title: "AI Music and Copyright — What YouTube Taught Me the Hard Way",
+    excerpt:
+      "YouTube ran ads on my Suno track while it blew up, then removed monetization and kept the money. Here is what that taught me about AI music copyright.",
+    date: "July 19, 2026",
+    readTime: "6 min",
+    coverImage: "ai-music-copyright.webp",
+  },
+  {
+    slug: "russian-chanson-suno",
+    category: "story",
+    title: "Russian Chanson with Suno — Songs About Life from Someone Who Isn't a Poet",
+    excerpt:
+      "I don't count my tracks. I just write what's on my mind, give it to Suno, and see what comes out. That's what chanson has always been — not perfection, but truth.",
+    date: "July 19, 2026",
+    readTime: "4 min",
+    coverImage: "russian-chanson-suno.webp",
+  },
 ];
 
 export function getPostsByCategory(category: Category): Post[] {
