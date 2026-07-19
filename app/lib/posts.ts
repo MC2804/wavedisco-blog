@@ -240,6 +240,15 @@ export const posts: Post[] = [
     readTime: "5 min",
     coverImage: "mistakes-uploading-spotify.webp",
   },
+  {
+    slug: "what-is-true-peak",
+    category: "guides",
+    title: "What Is True Peak — And Why Your Limiter Is Lying to You",
+    excerpt:
+      "Your limiter says 0 dBFS — clean. Spotify disagrees. The reason is true peak: audio that exists between samples and distorts after reconstruction.",
+    date: "July 19, 2026",
+    readTime: "5 min",
+  },
 ];
 
 export function getPostsByCategory(category: Category): Post[] {
