@@ -248,6 +248,7 @@ export const posts: Post[] = [
       "Your limiter says 0 dBFS — clean. Spotify disagrees. The reason is true peak: audio that exists between samples and distorts after reconstruction.",
     date: "July 19, 2026",
     readTime: "5 min",
+    coverImage: "what-is-true-peak.webp",
   },
 ];
 
