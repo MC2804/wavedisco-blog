@@ -1,0 +1,84 @@
+---
+slug: treblo-free-ai-music-generator
+title: "Treblo — Free AI Music Generator With No Limits: What It Is and How It Compares to Suno"
+category: guides
+excerpt: "Treblo generates unlimited songs for free, no account required. Same idea as Suno — but a completely different business model. Here is what I actually found."
+date: July 25, 2026
+readTime: 7 min
+coverImage: treblo-free-ai-music-generator.webp
+---
+
+![Treblo vs Suno — free unlimited AI music generator compared to paid model, split visual metaphor](/images/treblo-free-ai-music-generator.webp "Treblo free AI music generator — unlimited songs, no subscription, compared to Suno")
+
+*By Serj · July 2026 · 7 min read*
+
+A few weeks ago someone mentioned a site called Treblo. Free AI music generation, no daily limit, no watermark, no account required to listen. I figured there had to be a catch. There usually is.
+
+I spent time with it — read the terms, ran the audio through analysis, generated tracks on both Treblo and Suno with the same prompt. Here is what I actually found.
+
+## What Treblo is
+
+Treblo is an AI music generator, formerly known as Sonauto. They renamed the product in 2026 — apparently "Sonauto" was difficult to say in English. The technology is the same; the name changed.
+
+The model is called Melodia. At the time of writing, versions v2 through v3-preview are available, with v3 being the current main generation model. The platform supports over 4,000 style tags — genres, moods, instruments, era descriptors — and generates complete songs with vocals and instrumentation from text prompts.
+
+Supported export formats: OGG, MP3, WAV, FLAC, M4A. Mobile apps exist for iOS and Android.
+
+The community feed has real usage — tracks with tens of thousands of plays, active comments, multiple versions of songs being worked on publicly.
+
+## The business model is different from Suno
+
+This is where Treblo is genuinely unusual.
+
+**For regular users — it is free.** No daily cap, no credit system, no subscription tier for personal use. You generate as many songs as you want. The platform does not ask for a credit card.
+
+**Their paid plans are for developers.** Treblo has an API, and companies that want to build products on top of Treblo's technology pay for access by volume: starting at $11/month for 200 songs, up to $1,150/month for enterprise-scale generation. The music generation for individual users is subsidized by the business use.
+
+Suno works differently. The free tier on Suno gives roughly 300 songs per month — enough to experiment, but tracked and limited. Commercial rights on Suno require a paid subscription ($10/month Pro, $30/month Premier). On the free tier, Suno's terms reserve commercial use for paid subscribers.
+
+For someone who just wants to make music without worrying about credits: Treblo removes that friction entirely.
+
+## What the terms say about who owns the music
+
+Treblo's Terms of Service (as published on treblo.com in June 2026 — terms can change, worth checking the current version before making decisions) have an interesting structure.
+
+Section 6 restricts commercial use of the service itself. Reading that clause alone, you might conclude that monetising a Treblo track falls outside what the platform permits.
+
+Section 8 addresses this directly. It assigns all rights in generated outputs to the user, and adds:
+
+> *"The restrictions on commercial use of the Services elsewhere in these Legal Terms do not limit Your use of Your Outputs."*
+
+That sentence is a direct carve-out from Section 6. The restriction applies to using Treblo's infrastructure commercially — building a competing product, for instance. It does not apply to the music you generate. The lawyers appear to have anticipated the apparent conflict and resolved it within the same document.
+
+Worth noting: the broader question of what "owning" AI-generated music actually means legally is still unsettled in most jurisdictions. No court has definitively ruled on the copyright status of AI-authored audio in the US or EU. The TOS gives you the platform's position — not a final legal answer. Anyone building a serious commercial project on AI-generated music should talk to a lawyer, not rely on a blog post.
+
+## A real comparison: same prompt, both platforms
+
+I generated tracks on both platforms using the same parameters and ran the audio through loudness analysis. The results were different enough to be worth mentioning.
+
+**Suno** exported at -13.6 and -14.9 LUFS integrated — typically hot for streaming, which targets -14 LUFS. True peak was clean at -3.8 and -4.0 dBTP. Dynamic range (LRA) was 5.4 to 5.7 LU — consistent and compressed, which is characteristic of how Suno processes its output internally.
+
+**Treblo** exported at -15.6 LUFS on both tracks — already within Spotify's target range, so the platform is doing less internal limiting. True peak varied: one track came out at -2.2 dBTP (close enough to 0 that a true peak limiter before upload is advisable), the other at -5.1 dBTP, which is the cleanest reading of all four files. Dynamic range also varied significantly — 4.9 LU on one track, 12.1 LU on the other. That 12.1 LU reading is close to what you'd see on a lightly processed studio recording.
+
+So technically: Treblo outputs are closer to streaming targets on loudness, and one showed considerably more dynamic range than anything Suno produced. On paper, more dynamic.
+
+On the ear, though — Suno sounded better to me. More alive, more modern, more interesting as music. The arrangement felt considered. Treblo's output at this point is more variable — one track was genuinely dynamic and interesting, the other was flat in a way the numbers didn't fully predict.
+
+That gap between what the analysis shows and what you actually hear is worth keeping in mind. Treblo is younger. The model will likely improve. But right now, if you need the music to sound good to a listener rather than just measure well — Suno is ahead.
+
+## What Treblo is good for right now
+
+- Experimenting without worrying about a credit counter
+- Exploring a large number of style variations quickly
+- Generating background or reference material where quality is secondary to volume
+- Understanding what the space looks like outside of Suno's ecosystem
+
+## The short version
+
+Treblo is free, unlimited, and assigns output rights to the creator in its terms. Suno sounds better right now and has a larger community, but charges for commercial use and limits free generation. The right tool depends on what you need — quantity and freedom, or quality and features.
+
+Both will need mastering before streaming. If you want to check LUFS, True Peak, and clipping on your Treblo or Suno tracks before uploading, [WaveDisco Studio](https://wavedisco.com/studio) reads the numbers before you process anything.
+
+---
+
+**Related:** [Suno vs Udio Mastering — Which One Sounds Better After Processing?](/blog/suno-vs-udio-mastering) · [Why Suno Tracks Sound Too Loud](/blog/suno-tracks-too-loud) · [AI Music and Copyright — What YouTube Taught Me](/blog/ai-music-copyright)

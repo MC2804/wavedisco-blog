@@ -280,6 +280,16 @@ export const posts: Post[] = [
     readTime: "6 min",
     coverImage: "suno-vs-udio-mastering.webp",
   },
+  {
+    slug: "treblo-free-ai-music-generator",
+    category: "guides",
+    title: "Treblo — Free AI Music Generator With No Limits: What It Is and How It Compares to Suno",
+    excerpt:
+      "Treblo generates unlimited songs for free, no account required. Same idea as Suno — but a completely different business model. Here is what I actually found.",
+    date: "July 25, 2026",
+    readTime: "7 min",
+    coverImage: "treblo-free-ai-music-generator.webp",
+  },
 ];
 
 export function getPostsByCategory(category: Category): Post[] {
