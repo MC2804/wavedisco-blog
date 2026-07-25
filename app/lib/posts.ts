@@ -281,6 +281,16 @@ export const posts: Post[] = [
     coverImage: "suno-vs-udio-mastering.webp",
   },
   {
+    slug: "treblo-mastering-online",
+    category: "guides",
+    title: "Treblo Mastering Online — How to Get Your Treblo Tracks Ready for Streaming",
+    excerpt:
+      "Treblo exports quieter than Suno — which sounds like good news. But the True Peak can catch you off guard. Here is what the numbers actually show and how to fix it.",
+    date: "July 25, 2026",
+    readTime: "5 min",
+    coverImage: "treblo-mastering-online.webp",
+  },
+  {
     slug: "treblo-free-ai-music-generator",
     category: "guides",
     title: "Treblo — Free AI Music Generator With No Limits: What It Is and How It Compares to Suno",

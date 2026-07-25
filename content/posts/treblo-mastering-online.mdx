@@ -1,0 +1,95 @@
+---
+slug: treblo-mastering-online
+title: "Treblo Mastering Online — How to Get Your Treblo Tracks Ready for Streaming"
+category: guides
+excerpt: "Treblo exports quieter than Suno — which sounds like good news. But the True Peak can catch you off guard. Here is what the numbers actually show and how to fix it."
+date: July 25, 2026
+readTime: 5 min
+coverImage: treblo-mastering-online.webp
+---
+
+![Treblo mastering online — audio waveform analysis before streaming upload, LUFS and True Peak correction](/images/treblo-mastering-online.webp "Treblo mastering online — how to prepare Treblo AI music tracks for Spotify and streaming platforms")
+
+*By Serj · July 2026 · 5 min read*
+
+Treblo and Suno feel like close relatives. Same basic idea — type a prompt, get a song. Similar interface logic. Both easy enough that a complete beginner can get something out in minutes. The differences are in small things: design choices, generation style, how the audio comes out.
+
+That last part matters for mastering. And it turns out Treblo and Suno export audio differently enough that the approach is not quite the same.
+
+## How Treblo exports audio — the numbers
+
+I ran four tracks through loudness analysis — two from Suno, two from Treblo, same prompt. Here is what came back:
+
+**Treblo:**
+- Integrated LUFS: **-15.6** on both tracks
+- True Peak: **-2.2 dBTP** (track 1) · **-5.1 dBTP** (track 2)
+- LRA (dynamic range): **12.1 LU** (track 1) · **4.9 LU** (track 2)
+
+**Suno for comparison:**
+- Integrated LUFS: **-13.6** and **-14.9**
+- True Peak: **-3.8** and **-4.0 dBTP**
+- LRA: **5.4–5.7 LU**
+
+Treblo exports considerably quieter than Suno. Spotify targets -14 LUFS — Treblo is already at -15.6, which means the platform will leave your track mostly alone on loudness. Suno at -13.6 will get turned down by about 0.4 LUFS automatically.
+
+Quieter export sounds like a straightforward advantage. In most cases it is. But there is a catch.
+
+## The True Peak problem
+
+Treblo track 1 measured **-2.2 dBTP**. That is close to 0, which is the absolute ceiling.
+
+When streaming platforms encode your WAV to AAC or MP3, intersample peaks — peaks that exist between digital samples — can push above 0 dBFS and cause clipping in the encoded file. The standard recommendation for streaming is to keep True Peak at or below **-1 dBTP** before upload.
+
+At -2.2, the track is within safe range but tight. One pass through a True Peak limiter before upload removes the risk.
+
+Treblo track 2 at -5.1 dBTP had no issue at all — the cleanest file of the four tracks measured.
+
+So Treblo's True Peak is inconsistent between generations. The LUFS is predictably quiet; the True Peak is not. Worth checking each track before uploading.
+
+## The dynamic range difference
+
+The other notable thing: Treblo track 1 had an LRA of **12.1 LU**. That is almost double what Suno typically produces (5–6 LU).
+
+LRA measures the difference between quiet and loud sections. A higher number means the track breathes more — quieter verses, louder choruses, less internal compression. Suno applies heavier internal limiting, which flattens that range down to a consistent 5–6 LU across tracks.
+
+For mastering this matters because: a track with 12 LU of dynamic range usually does not need a compressor. Adding one would work against the natural dynamics and make it sound processed. On a Suno track at 5 LU, you are already working with something that has been internally compressed — a limiter and loudness adjustment is enough.
+
+## What to do before uploading Treblo tracks
+
+**Step 1: Analyze first**
+
+Before touching anything, check LUFS and True Peak. Drop the file into [WaveDisco Studio](https://wavedisco.com/studio) — the Analyze tab reads both values before any processing. If LUFS is around -15.6 and True Peak is below -1, you can upload with minimal intervention. If True Peak is above -1, you need a limiter pass.
+
+**Step 2: True Peak limiter if needed**
+
+Set the ceiling to **-1 dBTP**. This is a transparent correction — it catches intersample peaks without affecting the rest of the track. On WaveDisco, Quick mode handles this automatically with the correct ceiling for the platform you select.
+
+**Step 3: Skip heavy compression on dynamic tracks**
+
+If the Analyze tab shows LRA above 10 LU, the track is already dynamic. Resist the urge to compress it flat. That dynamic range is what makes it feel alive. A limiter pass and loudness check is enough.
+
+**Step 4: Check the target platform**
+
+- Spotify: -14 LUFS, -1 dBTP
+- Apple Music: -16 LUFS, -1 dBTP
+- YouTube: -14 LUFS, -1 dBTP
+
+Treblo at -15.6 LUFS sits between Spotify and Apple Music targets. For Spotify, this is fine — it will stay at -15.6. For Apple Music (-16), same. You are not over-target on either platform, so normalization will not touch the loudness.
+
+## Treblo vs Suno — which needs more mastering work
+
+Suno needs more loudness correction (it exports hotter) but is predictable — the same chain works across tracks because the output is internally consistent.
+
+Treblo needs less loudness work (already quieter) but is less predictable — True Peak varies between tracks, and dynamic range can be very different from one generation to the next. You need to check each track individually before deciding what to do.
+
+Neither is difficult to master. They just require checking different things.
+
+## The short version
+
+Treblo exports at -15.6 LUFS — already close to streaming targets, no heavy gain reduction needed. Check True Peak before uploading: if it is above -1 dBTP, run a True Peak limiter. If the track has high dynamic range (above 10 LU), skip the compressor and let it breathe.
+
+Drop your Treblo file into [WaveDisco Studio](https://wavedisco.com/studio) — the Analyze tab gives you the numbers before you process anything.
+
+---
+
+**Related:** [Treblo — Free AI Music Generator: What It Is and How It Compares to Suno](/blog/treblo-free-ai-music-generator) · [Suno Mastering Online](/blog/suno-mastering-online) · [What Is True Peak — And Why Your Limiter Is Lying to You](/blog/what-is-true-peak)
