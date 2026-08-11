@@ -281,6 +281,16 @@ export const posts: Post[] = [
     coverImage: "suno-vs-udio-mastering.webp",
   },
   {
+    slug: "how-to-distribute-ai-music",
+    category: "guides",
+    title: "How to Distribute AI Music to Streaming Platforms in 2026",
+    excerpt:
+      "DistroKid accepts AI music. CD Baby banned it. TuneCore requires human involvement. Here is the honest breakdown and the exact steps to get on Spotify.",
+    date: "August 11, 2026",
+    readTime: "7 min",
+    coverImage: "how-to-distribute-ai-music.webp",
+  },
+  {
     slug: "treblo-vs-suno-which-is-better",
     category: "guides",
     title: "Treblo vs Suno — I Tested Both. Here Is the Honest Result.",
