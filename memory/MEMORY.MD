@@ -233,14 +233,53 @@ wavedisco-manual-mode, dj-mode-guide
 - DNS в Hostinger: CNAME `blog` → `9b7cfaaeda7618cf.vercel-dns-017.com.` (TTL 14400) ✅
 - После пропагации: blog.wavedisco.com будет жить ✅
 
-## Следующие шаги (приоритет)
-1. **Дождаться DNS** — blog.wavedisco.com (5-15 мин)
-2. **Resend домен** — верифицировать wavedisco.com → раскомментировать email код
-3. **sitemap.xml + robots.txt** — для SEO
-4. После деплоя: ещё 10–15 статей
-3. **Resend** — зарегистрироваться → API ключ → верифицировать домен → добавить в Vercel
-4. **sitemap.xml + robots.txt**
-5. После деплоя: ещё 10–15 статей
+## ✅ Актуальный статус (2026-08-12)
+
+**33 статьи LIVE** на blog.wavedisco.com (было 14 на 25.06.2026)
+
+### Статьи #15–#33 (добавлены после сессии 3):
+- free-ai-music-mastering-tool, suno-mastering-online, udio-mastering-online
+- best-free-ai-music-mastering-tools, how-to-make-suno-music-louder
+- mistakes-uploading-ai-music-spotify, noise-gate-hysteresis
+- what-is-true-peak, ai-music-copyright, russian-chanson-suno
+- suno-vs-udio-mastering, from-suno-to-real-product
+- treblo-free-ai-music-generator, treblo-mastering-online
+- treblo-vs-suno-which-is-better, how-to-distribute-ai-music
+- youtube-ai-music-monetization-2026
+- **#32 ai-music-watermarks-explained** — Suno анонс 6 авг 2026, SynthID только Google (не Suno/Udio), C2PA, EU AI Act
+- **#33 copyright-your-lyrics-before-ai-song** — Form TX, GRAM ($85 за 10), только тексты, legal hedging
+
+### GSC (11.08.2026)
+12 кликов / 3480 показов / CTR 0.3% / позиция 14.2
+
+### Ожидающие задачи
+- ⏳ Title/meta fix для 3 страниц с 0 кликами: free-ai-music-mastering-tool, best-free-ai-music-mastering-tools, how-to-fix-clipping
+- ⏳ T3: Mureka обзор
+- ⏳ T5: Suno stems
+- ⏳ E2-E5: evergreen топики
+
+### Качественный стандарт статей (установлен 2026-08-11)
+- Разговорный тон, от первого лица, честно
+- Хеджирующий язык: "на момент написания", "проверьте актуальность"
+- Каждый технический факт проверять перед публикацией
+- Красная линия: никаких инструкций по обходу защит
+- Перед пушем: пользователь проверяет и одобряет
+
+### Инфраструктура (всё LIVE)
+- blog.wavedisco.com ✅ CNAME → Vercel
+- GitHub: MC2804/wavedisco-blog (main), автодеплой Vercel
+- GSC верифицирован ✅ | Яндекс Вебмастер ✅
+- YM 109698219 + Clarity x2xt3h2tuc в Vercel ✅
+- Resend email активирован (blog@wavedisco.com → hello@wavedisco.com) ✅
+- Neon DB: blog_reactions + blog_contacts ✅
+- sitemap.ts автоматически, менять не нужно ✅
+
+### Технические детали
+- Статья: content/posts/[slug].mdx
+- Реестр: app/lib/posts.ts → массив posts (добавлять новые)
+- Картинки: public/images/[slug].webp, брать из C:\Users\oldjo\OneDrive\Рабочий стол\img-mlog\
+- Дев-сервер: npm run dev (порт 3000, не 3001!)
+- Деплой: git push origin main
 
 ---
 
