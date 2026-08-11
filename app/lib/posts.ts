@@ -291,6 +291,26 @@ export const posts: Post[] = [
     coverImage: "youtube-ai-music-monetization.webp",
   },
   {
+    slug: "ai-music-watermarks-explained",
+    category: "guides",
+    title: "What Are AI Music Watermarks — And Should You Try to Remove Them?",
+    excerpt:
+      "Invisible watermarks are built into AI-generated audio. Here is what they are, why trying to remove them is risky, and why honest disclosure works better.",
+    date: "August 11, 2026",
+    readTime: "6 min",
+    coverImage: "ai-music-watermarks-explained.webp",
+  },
+  {
+    slug: "copyright-your-lyrics-before-ai-song",
+    category: "guides",
+    title: "How to Copyright Your Song Lyrics Before Generating AI Music",
+    excerpt:
+      "Your lyrics are a literary work and can be registered separately from the music. Here is how to do it before generating the AI track — and why it matters.",
+    date: "August 11, 2026",
+    readTime: "6 min",
+    coverImage: "copyright-your-lyrics-before-ai-song.webp",
+  },
+  {
     slug: "how-to-distribute-ai-music",
     category: "guides",
     title: "How to Distribute AI Music to Streaming Platforms in 2026",
