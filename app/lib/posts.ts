@@ -281,6 +281,16 @@ export const posts: Post[] = [
     coverImage: "suno-vs-udio-mastering.webp",
   },
   {
+    slug: "youtube-ai-music-monetization-2026",
+    category: "guides",
+    title: "YouTube and AI Music in 2026 — What Changed and What to Do",
+    excerpt:
+      "YouTube changed its monetization rules for AI content in July 2026. Three types of channels lose access. Here is what happened and what you should do now.",
+    date: "August 11, 2026",
+    readTime: "7 min",
+    coverImage: "youtube-ai-music-monetization.webp",
+  },
+  {
     slug: "how-to-distribute-ai-music",
     category: "guides",
     title: "How to Distribute AI Music to Streaming Platforms in 2026",
