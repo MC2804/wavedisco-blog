@@ -281,6 +281,16 @@ export const posts: Post[] = [
     coverImage: "suno-vs-udio-mastering.webp",
   },
   {
+    slug: "treblo-vs-suno-which-is-better",
+    category: "guides",
+    title: "Treblo vs Suno — I Tested Both. Here Is the Honest Result.",
+    excerpt:
+      "Same prompt, two AI generators. Real LUFS and dynamic range measurements on both. Suno sounds better right now. Treblo is free. Here is everything.",
+    date: "August 11, 2026",
+    readTime: "6 min",
+    coverImage: "treblo-vs-suno-comparison.webp",
+  },
+  {
     slug: "treblo-mastering-online",
     category: "guides",
     title: "Treblo Mastering Online — How to Get Your Treblo Tracks Ready for Streaming",
