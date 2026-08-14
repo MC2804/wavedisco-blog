@@ -62,9 +62,9 @@ export const posts: Post[] = [
   {
     slug: "how-to-fix-clipping",
     category: "guides",
-    title: "How to Fix Clipping in AI Music — A Practical Guide",
+    title: "Clipping in AI Music — Why Suno and Udio Do It and How to Remove It",
     excerpt:
-      "Your AI track has clipping. Harsh buzzing on loud transients, brittleness in the high end. This guide explains what's happening and how to fix it.",
+      "Your track sounds harsh and buzzy after export. That's clipping — Suno and Udio both produce it for the same reason. Here is what's happening and how to fix it.",
     date: "June 23, 2026",
     readTime: "5 min read",
     coverImage: "how-to-fix-clipping-cover.webp",
@@ -183,9 +183,9 @@ export const posts: Post[] = [
   {
     slug: "free-ai-music-mastering-tool",
     category: "guides",
-    title: "Free AI Music Mastering Tool — Master Your Suno and Udio Tracks Online",
+    title: "Free AI Music Mastering Tool That Needs No Account — I Use It Every Time",
     excerpt:
-      "Most mastering tools cost money. WaveDisco Studio doesn't. Free browser mastering for Suno and Udio — no install, no account, no watermark.",
+      "Most tools ask for a sign-up before you hear what they do. WaveDisco Studio doesn't. Drop the file, get a master. Here is what it does and when it's enough.",
     date: "July 2, 2026",
     readTime: "4 min",
     coverImage: "free-ai-mastering-tool.webp",
@@ -213,9 +213,9 @@ export const posts: Post[] = [
   {
     slug: "best-free-ai-music-mastering-tools",
     category: "guides",
-    title: "Best Free AI Music Mastering Tools in 2026 — Honest Comparison",
+    title: "4 Free AI Music Mastering Tools — I Tested All of Them. Here Is the Real Ranking.",
     excerpt:
-      "Four tools compared honestly — WaveDisco Studio, Audacity, FFmpeg, LANDR. What each does well, where each falls short, and which is right for AI music.",
+      "WaveDisco Studio, Audacity, FFmpeg, LANDR free tier. I ran the same Suno track through all four. The differences were bigger than I expected.",
     date: "July 2, 2026",
     readTime: "5 min",
     coverImage: "best-free-ai-mastering-tools.webp",
