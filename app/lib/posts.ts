@@ -281,6 +281,36 @@ export const posts: Post[] = [
     coverImage: "suno-vs-udio-mastering.webp",
   },
   {
+    slug: "suno-september-2026-changes-explained",
+    category: "guides",
+    title: "What's Actually Changing with Suno on September 3 — And Why",
+    excerpt:
+      "Suno is capping downloads starting September 3, 2026. Free accounts get 7 total. Pro gets 20 a month. Here is what changed, why it happened, and what to do now.",
+    date: "August 12, 2026",
+    readTime: "6 min",
+    coverImage: "suno-september-2026-changes-explained.webp",
+  },
+  {
+    slug: "what-to-backup-suno-library-guide",
+    category: "guides",
+    title: "How to Back Up Your Suno Library Before September 3 — A Practical Guide",
+    excerpt:
+      "Suno download limits start September 3. Here is how to get your tracks out before the deadline using Suno's own built-in tools — no extensions needed.",
+    date: "August 12, 2026",
+    readTime: "5 min",
+    coverImage: "what-to-backup-suno-library-guide.webp",
+  },
+  {
+    slug: "suno-watermark-vs-content-id-explained",
+    category: "guides",
+    title: "Suno Watermark vs YouTube Content ID — Two Different Systems",
+    excerpt:
+      "The watermark Suno is adding and YouTube's Content ID are unrelated. One marks where audio came from. The other checks if it sounds like someone else's song.",
+    date: "August 12, 2026",
+    readTime: "6 min",
+    coverImage: "suno-watermark-vs-content-id-explained.webp",
+  },
+  {
     slug: "youtube-ai-music-monetization-2026",
     category: "guides",
     title: "YouTube and AI Music in 2026 — What Changed and What to Do",
