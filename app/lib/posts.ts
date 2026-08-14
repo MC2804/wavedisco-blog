@@ -380,6 +380,16 @@ export const posts: Post[] = [
     readTime: "7 min",
     coverImage: "treblo-free-ai-music-generator.webp",
   },
+  {
+    slug: "best-ai-music-generators-2026",
+    category: "guides",
+    title: "AI Music Generators in 2026 — 6 Compared by What You Can Actually Do With the Music",
+    excerpt:
+      "Six AI music generators compared on pricing and commercial rights. The gap most people miss: Udio's $10/month plan has no commercial rights. Suno's does.",
+    date: "August 14, 2026",
+    readTime: "8 min",
+    coverImage: "best-ai-music-generators-2026.webp",
+  },
 ];
 
 export function getPostsByCategory(category: Category): Post[] {
