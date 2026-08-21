@@ -390,6 +390,16 @@ export const posts: Post[] = [
     readTime: "8 min",
     coverImage: "best-ai-music-generators-2026.webp",
   },
+  {
+    slug: "suno-studio-explained",
+    category: "guides",
+    title: "What Is Suno Studio — And Why Downloads From It Don't Count Against Your Limit",
+    excerpt:
+      "Suno Studio is Premier-only ($30/mo) — not a free feature. The part most people miss: downloads from Studio don't count against your monthly limit.",
+    date: "August 21, 2026",
+    readTime: "5 min",
+    coverImage: "suno-studio-explained.webp",
+  },
 ];
 
 export function getPostsByCategory(category: Category): Post[] {
