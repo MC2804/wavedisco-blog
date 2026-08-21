@@ -400,6 +400,16 @@ export const posts: Post[] = [
     readTime: "5 min",
     coverImage: "suno-studio-explained.webp",
   },
+  {
+    slug: "ai-music-label-contract-red-flags",
+    category: "guides",
+    title: "I Almost Signed a Label Contract. Here Is What I Found When I Actually Read It.",
+    excerpt:
+      "A label offered 85% royalties. It sounded generous. Then I read the contract carefully — and realized the percentage was the least important thing in it.",
+    date: "August 21, 2026",
+    readTime: "9 min",
+    coverImage: "ai-music-label-contract-red-flags.webp",
+  },
 ];
 
 export function getPostsByCategory(category: Category): Post[] {
