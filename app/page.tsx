@@ -1,11 +1,11 @@
 import Link from "next/link";
 import ArticleCard from "./components/ArticleCard";
-import { getLatestPosts } from "./lib/posts";
+import { getLatestPosts, posts } from "./lib/posts";
 
 const featuredSlug = "my-story";
 
 export default function Home() {
-  const latest = getLatestPosts(6).filter((p) => p.slug !== featuredSlug);
+  const latest = getLatestPosts(100).filter((p) => p.slug !== featuredSlug).slice(0, 12);
 
   return (
     <>
@@ -64,7 +64,7 @@ export default function Home() {
         <div className="max-w-2xl mx-auto px-6 py-5 grid grid-cols-3 divide-x divide-ink/20">
           {[
             { value: "6mo", label: "Built in" },
-            { value: "14", label: "Articles" },
+            { value: `${posts.length}`, label: "Articles" },
             { value: "$0", label: "VC money" },
           ].map(({ value, label }) => (
             <div key={label} className="text-center px-4">
@@ -90,6 +90,14 @@ export default function Home() {
             {latest.map((post) => (
               <ArticleCard key={post.slug} {...post} />
             ))}
+          </div>
+          <div className="mt-8 flex justify-center">
+            <Link
+              href="/guides"
+              className="text-sm font-bold uppercase tracking-widest text-amber border-b-2 border-amber pb-0.5 hover:opacity-70 transition-opacity"
+            >
+              All articles →
+            </Link>
           </div>
         </div>
       </section>
