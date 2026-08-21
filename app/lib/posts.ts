@@ -393,11 +393,11 @@ export const posts: Post[] = [
   {
     slug: "suno-studio-explained",
     category: "guides",
-    title: "What Is Suno Studio — And Why Downloads From It Don't Count Against Your Limit",
+    title: "What Is Suno Studio — Studio 2.0, Downloads, and What Each Plan Actually Gets You",
     excerpt:
-      "Suno Studio is Premier-only ($30/mo) — not a free feature. The part most people miss: downloads from Studio don't count against your monthly limit.",
-    date: "August 21, 2026",
-    readTime: "5 min",
+      "Suno Studio 2.0 launched August 13 with MIDI, a wavetable synth, and a chat bar that builds custom plugins. It's still Premier-only. Here's what that actually means.",
+    date: "August 22, 2026",
+    readTime: "8 min",
     coverImage: "suno-studio-explained.webp",
   },
   {
