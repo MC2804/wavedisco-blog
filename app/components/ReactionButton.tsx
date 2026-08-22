@@ -27,12 +27,17 @@ export default function ReactionButton({ slug }: Props) {
         method: "POST",
       });
       const data = await res.json();
-      if (data.count !== undefined) setCount(data.count);
+      if (data.count !== undefined) {
+        setCount(data.count);
+        setLiked(true);
+        localStorage.setItem(`liked_${slug}`, "true");
+      }
     } catch {
+      // Network failure: optimistic update, mark liked locally
       setCount((c) => (c ?? 0) + 1);
+      setLiked(true);
+      localStorage.setItem(`liked_${slug}`, "true");
     }
-    setLiked(true);
-    localStorage.setItem(`liked_${slug}`, "true");
   }
 
   return (
