@@ -391,6 +391,16 @@ export const posts: Post[] = [
     coverImage: "best-ai-music-generators-2026.webp",
   },
   {
+    slug: "suno-model-versions-audio-comparison",
+    category: "guides",
+    title: "Suno Model Versions Compared — I Had Old Tracks, Got Curious, Here's What the Numbers Say",
+    excerpt:
+      "I had tracks sitting around from v2 through v5.5. Ran them all through an analyzer. A few things came out that I genuinely didn't expect.",
+    date: "August 22, 2026",
+    readTime: "7 min",
+    coverImage: "suno-model-versions-audio-comparison.webp",
+  },
+  {
     slug: "why-suno-song-sounds-worse-after-download",
     category: "guides",
     title: "Why Does My Suno Track Sound Worse After I Download It?",

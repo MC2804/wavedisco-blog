@@ -1,0 +1,95 @@
+---
+slug: suno-model-versions-audio-comparison
+title: "Suno Model Versions Compared — I Had Old Tracks, Got Curious, Here's What the Numbers Say"
+category: guides
+date: "August 22, 2026"
+readTime: "7 min"
+excerpt: "I had tracks sitting around from v2 through v5.5. Ran them all through an analyzer. A few things came out that I genuinely didn't expect."
+coverImage: "suno-model-versions-audio-comparison.webp"
+---
+
+![Suno model versions compared — v2 through v5.5, loudness measurements, MP3 vs WAV, what changed](/images/suno-model-versions-audio-comparison.webp "Suno model versions v2 to v5.5 — real loudness measurements on my own tracks, what actually changed between versions")
+
+*By Serj · August 2026 · 7 min read*
+
+---
+
+I had a folder of old Suno tracks. One from v2, a few from v3, some from v4, the newer ones — v5, v5.5. Just sitting there, from different periods of me messing around with the tool.
+
+At some point I thought: wait, I've been using this thing across all these versions without really knowing what actually changed under the hood, technically. Not the vibe — I could hear that. But the actual audio properties. Loudness, format, what the MP3 does differently from the WAV. So I pulled one track from each version, dropped them all into an analyzer, and wrote down the numbers.
+
+A few things surprised me. I'll get to those.
+
+---
+
+## The length thing first, because that one's the most obvious
+
+Suno documents the maximum generation length per version on their Help Center, and the jump over time is pretty dramatic:
+
+- v2: up to 1 minute 20 seconds per generation
+- v3: up to 2 minutes
+- v3.5 and v4: up to 4 minutes
+- v4.5, v5, v5.5: up to 8 minutes
+
+My actual tracks didn't always hit the maximum — that's just how generation works, the model stops where the song ends. But the ceiling going from 1:20 to 8 minutes across versions is real and officially documented. The tracks I measured ranged from 1:20 (v2, exactly at its limit) to 4:50 (a v4.5 variant).
+
+---
+
+## The actual measurements
+
+One track per version, both WAV and MP3 where I had them. LUFS is average loudness. True Peak is the highest instantaneous level in dBFS — 0 is the ceiling, above 0 means clipping. MP3 kbps is the bitrate.
+
+| Version | Length | WAV LUFS | MP3 LUFS | Difference | WAV Peak | MP3 Peak | MP3 kbps |
+|---|---|---|---|---|---|---|---|
+| v2 | 1:20 | -15.4 | -13.7 | +1.7 | -0.0 | **+1.0** | 186 |
+| v3 | 2:00 | -15.8 | -15.8 | 0.0 | -2.9 | -2.7 | 184 |
+| v3.5 | 3:24 | -15.9 | -15.9 | 0.0 | -3.4 | -3.4 | 184 |
+| v4 (Pro) | 4:00 | -11.7 | -11.7 | 0.0 | -0.4 | +0.5 | 190 |
+| v4.5 (Pro) | 3:50 | -14.2 | -13.0 | +1.2 | -3.9 | -0.8 | 191 |
+| v4.5+ (Pro) | 4:21 | -13.8 | -13.0 | +0.8 | -3.2 | -0.6 | 184 |
+| v4.5-all | 4:50 | -15.6 | -14.0 | +1.6 | -3.2 | 0.0 | 190 |
+| v5 (Pro) | 3:31 | -14.8 | -14.0 | +0.8 | -4.1 | -1.9 | 183 |
+| v5.5 (Pro) | 4:43 | -14.6 | -13.6 | +1.0 | -4.2 | -1.5 | 184 |
+
+One track per version, not a scientific sample. These are my tracks, not a claim about all Suno generations ever. But the patterns were consistent enough within my data that they're worth looking at.
+
+---
+
+## The things that surprised me
+
+**v2 is clipping.** Look at the MP3 True Peak column for v2: +1.0 dBFS. That's above zero. The ceiling is 0 — you're not supposed to go over it. The WAV version is sitting right at -0.0, which is barely okay, and then the MP3 encoding pushes it over. That means the oldest tracks I had are technically clipping in their MP3 form. Not necessarily something you'd hear as a nasty distortion, but it's there in the numbers, and it matters if you're ever going to upload that file to a streaming platform.
+
+**v3 and v3.5 have zero difference between WAV and MP3.** Literally zero — 0.0 LUFS difference, almost identical True Peak. I measured that and looked at it for a second because I wasn't sure I'd done it right. Every other version I measured has at least some difference. These two: nothing. I don't know if that's a coincidence of these specific tracks or something about how those versions encoded. But it's the one clean result in the whole table and it stands out.
+
+**v4 Pro is loud.** Not a lot — -11.7 LUFS compared to -14 to -15 for most others. But in loudness terms, that's noticeable. That track will sound hotter than the others at the same volume setting. Also like v3/v3.5, the WAV and MP3 are identical in LUFS — the +0.5 True Peak on the MP3 is a minor overshoot rather than a loudness difference. I have no explanation for why v4 Pro came out louder. Could be the track, could be something about that version, I genuinely don't know.
+
+**The MP3/WAV gap appears, disappears, and reappears.** v2 has a 1.7 LU gap. v3 and v3.5: zero gap. v4: zero gap. Then from v4.5 onwards it's back — 0.8 to 1.6 LU every time. That's the same pattern I found [when I compared WAV and MP3 downloads separately](/blog/why-suno-song-sounds-worse-after-download), but broken out by version it's more visible. Whatever changed in v4.5's encoding pipeline brought that gap back and it's stayed through v5 and v5.5.
+
+---
+
+## What the kbps variation means (short version)
+
+The MP3 bitrate numbers jump around a bit — 183, 184, 186, 190, 191. I'm honestly not sure exactly why the number varies in this range. It could be how the encoder handles tracks with different amounts of audio complexity. It could be something about how ffprobe reports the overall file bitrate, which includes container overhead and not just the audio stream. Either way, the spread is small and I didn't notice any difference in how those files actually sound. Not something I'd worry about.
+
+---
+
+## The honest version of what this is
+
+Nine tracks, one per version, from my own account. Not a controlled study, not a comprehensive test. The trends I described — v2 clipping, the MP3/WAV gap coming and going, v4 Pro running loud — are real in my data. Whether they'd show up the same way in your tracks, I can't promise. Different genres, different prompts, different generation luck will all move the numbers.
+
+What I can say: the loudness levels I measured mostly cluster in the -14 to -16 LUFS range, which is close to streaming platform normalization targets. That's better news than I expected going in — I thought the older versions might be significantly quieter. They're not, mostly. They just have different encoding quirks.
+
+---
+
+## The short version
+
+- Generation length has officially grown from 1:20 (v2) to 8 minutes max (v4.5 and newer) — documented on Suno's Help Center
+- My v2 track clips in MP3 form — True Peak +1.0 dBFS, above the ceiling
+- v3 and v3.5 show zero difference between WAV and MP3 loudness, which was unexpected
+- v4 Pro came out louder than everything else (-11.7 LUFS), no clear reason
+- The MP3/WAV loudness gap: present in v2, gone in v3/v3.5/v4, back from v4.5 onwards
+- MP3 kbps varies between files (183–191) — not sure exactly why, probably minor encoding differences, nothing audible
+
+---
+
+**Related:** [Why Does My Suno Track Sound Worse After I Download It?](/blog/why-suno-song-sounds-worse-after-download) · [What Is Suno Studio — Studio 2.0, Downloads, and What Each Plan Actually Gets You](/blog/suno-studio-explained) · [AI Music Generators in 2026 — 6 Compared](/blog/best-ai-music-generators-2026)
