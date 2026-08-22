@@ -391,6 +391,16 @@ export const posts: Post[] = [
     coverImage: "best-ai-music-generators-2026.webp",
   },
   {
+    slug: "why-suno-song-sounds-worse-after-download",
+    category: "guides",
+    title: "Why Does My Suno Track Sound Worse After I Download It?",
+    excerpt:
+      "The track sounds great in Suno's player, then flat and quiet after downloading. Here's what's probably going on — and what you can actually do about it.",
+    date: "August 22, 2026",
+    readTime: "6 min",
+    coverImage: "why-suno-song-sounds-worse-after-download.webp",
+  },
+  {
     slug: "suno-studio-explained",
     category: "guides",
     title: "What Is Suno Studio — Studio 2.0, Downloads, and What Each Plan Actually Gets You",
