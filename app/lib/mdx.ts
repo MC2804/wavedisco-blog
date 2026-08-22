@@ -29,6 +29,7 @@ export function getMdxPost(slug: string): MdxPost | null {
     date: data.date ?? "",
     readTime: data.readTime ?? "",
     excerpt: data.excerpt ?? "",
+    coverImage: data.coverImage,
     content,
   };
 }
