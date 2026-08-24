@@ -373,9 +373,9 @@ export const posts: Post[] = [
   {
     slug: "treblo-free-ai-music-generator",
     category: "guides",
-    title: "Treblo — Free AI Music Generator With No Limits: What It Is and How It Compares to Suno",
+    title: "Is Treblo Free? Unlimited Songs, No Watermark, Commercial Rights Explained",
     excerpt:
-      "Treblo generates unlimited songs for free, no account required. Same idea as Suno — but a completely different business model. Here is what I actually found.",
+      "Treblo generates unlimited songs for free — no daily cap, no watermark, commercial rights included. Yes, even on the free tier. Here is what the terms actually say.",
     date: "July 25, 2026",
     readTime: "7 min",
     coverImage: "treblo-free-ai-music-generator.webp",
