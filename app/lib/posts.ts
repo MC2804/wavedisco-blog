@@ -430,6 +430,16 @@ export const posts: Post[] = [
     readTime: "9 min",
     coverImage: "ai-music-label-contract-red-flags.webp",
   },
+  {
+    slug: "how-to-make-money-with-ai-music",
+    category: "guides",
+    title: "How to Make Money with AI Music in 2026 — What Actually Works and What to Expect",
+    excerpt:
+      "Six channels for making real money from AI music in 2026 — with honest numbers, which platforms accept it, and what you need before you start.",
+    date: "August 24, 2026",
+    readTime: "9 min",
+    coverImage: "how-to-make-money-with-ai-music.webp",
+  },
 ];
 
 export function getPostsByCategory(category: Category): Post[] {
