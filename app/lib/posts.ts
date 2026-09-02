@@ -42,7 +42,7 @@ export const posts: Post[] = [
   {
     slug: "udio-vs-suno",
     category: "guides",
-    title: "Suno vs Udio 2026 — I Mastered Both. Here Is the Honest Difference.",
+    title: "Is Suno or Udio Better? An Honest Side-by-Side Comparison",
     excerpt:
       "Same prompt, two generators. Suno clips differently than Udio, masters differently, and suits different styles. Real results after processing both through the same chain.",
     date: "June 23, 2026",
@@ -195,7 +195,7 @@ export const posts: Post[] = [
     category: "guides",
     title: "Suno Mastering Online — How to Make Your Suno Tracks Streaming-Ready",
     excerpt:
-      "Suno exports at -10 to -12 LUFS. Streaming platforms want -14 to -16 LUFS. Here is exactly why that gap causes problems and how to fix it online for free.",
+      "Suno tracks vary in loudness — measured between -13.8 and -15.0 LUFS — but clipping peaks near 0 dBFS are consistent. Here is why that causes problems on streaming platforms and how to fix it online for free.",
     date: "July 2, 2026",
     readTime: "5 min",
     coverImage: "suno-mastering-online.webp",
