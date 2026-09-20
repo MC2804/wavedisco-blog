@@ -460,6 +460,16 @@ export const posts: Post[] = [
     readTime: "8 min",
     coverImage: "suno-v6-what-changed.webp",
   },
+  {
+    slug: "suno-v6-vs-v55-audio-test",
+    category: "guides",
+    title: "Is Suno v6 Better Than v5.5? Here Is What the Numbers Actually Showed.",
+    excerpt:
+      "I didn't want to switch from v5.5. Instead of accepting Suno's announcement, I took three of my own songs, regenerated them on every version, and measured every output. What I expected to find, I didn't. What I actually found was more specific.",
+    date: "September 20, 2026",
+    readTime: "6 min",
+    coverImage: "suno-v6-vs-v55-audio-test.webp",
+  },
 ];
 
 export function getPostsByCategory(category: Category): Post[] {
