@@ -450,6 +450,16 @@ export const posts: Post[] = [
     readTime: "9 min",
     coverImage: "how-to-make-money-with-ai-music.webp",
   },
+  {
+    slug: "suno-v6-what-changed",
+    category: "guides",
+    title: "What Changed in Suno v6 — and What Does It Mean for Your Music?",
+    excerpt:
+      "Suno replaced all its models on September 9, 2026. Three new variants, different access tiers, and a commercial rights rule tied to official downloads. Here is what actually changed and what it means for your tracks.",
+    date: "September 9, 2026",
+    readTime: "8 min",
+    coverImage: "suno-v6-what-changed.webp",
+  },
 ];
 
 export function getPostsByCategory(category: Category): Post[] {
